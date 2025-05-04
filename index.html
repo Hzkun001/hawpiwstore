@@ -28,42 +28,60 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <!-- AOS Animate On Scroll -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- SEO Meta -->
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Hawpiw Store - Toko Akun Premium, Ebook, Software" />
+  <meta property="og:description" content="Toko digital terpercaya untuk akun premium, ebook, dan software. Harga terjangkau, layanan cepat, support 24 jam." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:type" content="website" />
+  <style>
+    .hero_area.sub_pages, .slider_section {
+      background: none !important;
+      min-height: unset !important;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Loading Spinner -->
+  <div id="loading-spinner" style="position:fixed;z-index:99999;top:0;left:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:#fff;"><i class="fas fa-spinner fa-spin fa-3x" style="color:#fc5d35;"></i></div>
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section sticky-top" data-aos="fade-down" data-aos-duration="1000">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3" style="position:relative;">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" /><span>
-              Official Id
-            </span>
+            <img src="images/logo.png" alt="Logo Hawpiw Store" /><span> Official Id </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
+          <div class="darkmode-toggle ml-3">
+            <button id="darkModeBtn" class="btn btn-sm" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
+              <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html"><i class="fas fa-home mr-1"></i>Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="fruit.html"> Products</a>
+                  <a class="nav-link" href="fruit.html"><i class="fas fa-box mr-1"></i> Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Services </a>
+                  <a class="nav-link" href="service.html"><i class="fas fa-cogs mr-1"></i> Services </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us</a>
+                  <a class="nav-link" href="contact.html"><i class="fas fa-envelope mr-1"></i>Contact us</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0" onsubmit="return false;">
+                <button id="showSearchInput" class="btn nav_search-btn" type="button" aria-label="Search"></button>
               </form>
             </div>
             <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
@@ -77,7 +95,7 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
-    <section class=" slider_section position-relative">
+    <section class=" slider_section position-relative" data-aos="fade-up" data-aos-duration="1200">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -212,7 +230,7 @@
 
   <!-- service section -->
 
-  <section class="service_section layout_padding ">
+  <section class="service_section layout_padding " data-aos="fade-up" data-aos-delay="200">
     <div class="container">
       <h2 class="custom_heading">Layanan Kami</h2>
       <p class="custom_heading-text">
@@ -261,7 +279,7 @@
 
   <!-- fruits section -->
 
-  <section class="fruit_section">
+  <section class="fruit_section" data-aos="fade-up" data-aos-delay="400">
     <div class="container">
       <h2 class="custom_heading">Produk Digital Terbaik</h2>
       <p class="custom_heading-text">
@@ -338,98 +356,103 @@
 
   <!-- end fruits section -->
 
-  <!-- tasty section -->
-  <section class="tasty_section">
-    <div class="container_fluid">
-      <h2>
-        Layanan Runtime 24 Jam
-      </h2>
-    </div>
-  </section>
-
-  <!-- end tasty section -->
-
   <!-- client section -->
 
-  <section class="client_section layout_padding">
+  <section class="testimonial_section layout_padding" data-aos="fade-up" data-aos-delay="800">
     <div class="container">
-      <h2 class="custom_heading">Testimonial</h2>
-      <p class="custom_heading-text">
-        There are many variations of passages of Lorem Ipsum available, but
-        the majority have
-      </p>
-      <div>
-        <div id="carouselExampleControls-2" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="client_container layout_padding2">
-                <div class="client_img-box">
-                  <img src="images/client.png" alt="" />
-                </div>
-                <div class="client_detail">
-                  <h3>
-                    Reza Arap
-                  </h3>
-                  <p class="custom_heading-text">
-                    Ini platform layanan terbaik yang pernah gue temuin <br />
-                    Gue kasih bintang 5.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="client_container layout_padding2">
-                <div class="client_img-box">
-                  <img src="images/client.png" alt="" />
-                </div>
-                <div class="client_detail">
-                  <h3>
-                    Eminem
-                  </h3>
-                  <p class="custom_heading-text">
-                    Saya selalu beli spotify premium di hawpiw store <br />
-                    Musik adalah hal indah di dunia.
-                  </p>
+      <h2 class="custom_heading">Apa Kata Mereka?</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-5 mb-4">
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="images/client.png" alt="Reza Arap">
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-quote">“Pelayanan cepat, harga murah, dan support ramah. Sangat recommended!”</p>
+                    <div class="testimonial-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-user">
+                      <strong>Reza Arap</strong><br>
+                      <span>Content Creator</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="client_container layout_padding2">
-                <div class="client_img-box">
-                  <img src="images/client.png" alt="" />
-                </div>
-                <div class="client_detail">
-                  <h3>
-                    Gus Azmi
-                  </h3>
-                  <p class="custom_heading-text">
-                    Pacaran tidak perlu <br />
-                    Beli premium tetap di hawpiw selalu.
-                  </p>
+              <div class="col-md-6 col-lg-5 mb-4">
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="images/client.png" alt="Eminem">
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-quote">“Saya selalu beli spotify premium di hawpiw store. Musik adalah hal indah di dunia.”</p>
+                    <div class="testimonial-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-user">
+                      <strong>Eminem</strong><br>
+                      <span>Musisi</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="custom_carousel-control">
-            <a class="carousel-control-prev" href="#carouselExampleControls-2" role="button" data-slide="prev">
-              <span class="" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls-2" role="button" data-slide="next">
-              <span class="" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-5 mb-4">
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="images/client.png" alt="Gus Azmi">
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-quote">“Pacaran tidak perlu. Beli premium tetap di hawpiw selalu.”</p>
+                    <div class="testimonial-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-user">
+                      <strong>Gus Azmi</strong><br>
+                      <span>Mahasiswa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5 mb-4">
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="images/client.png" alt="Nina Feast">
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-quote">“Akun langsung aktif, admin fast response, dan banyak promo menarik!”</p>
+                    <div class="testimonial-rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-user">
+                      <strong>Nina Feast</strong><br>
+                      <span>Freelancer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
     </div>
   </section>
-
-  <!-- end client section -->
+  <!-- end testimonial section -->
 
   <!-- contact section -->
-  <section class="contact_section layout_padding">
+  <section class="contact_section layout_padding" data-aos="fade-up" data-aos-delay="1000">
     <div class="container">
       <h2 class="font-weight-bold">
         Contact Us
@@ -458,9 +481,7 @@
                   </button>
                 </div>
               </div>
-
             </div>
-
           </form>
         </div>
       </div>
@@ -477,155 +498,131 @@
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6388.562164369867!2d114.7489894309652!3d-3.4716473000833736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de6812bf5fd4517%3A0x54a8b152b3e249d4!2sUniversitas%20Islam%20Negeri%20Antasari%20Banjarmasin%20-%20Kampus%20II!5e0!3m2!1sid!2sid!4v1743077382638!5m2!1sid!2sid" 
   allowfullscreen>
 </iframe>
-  <section class="info_section layout_padding">
+  
+  <!-- WHY US SECTION -->
+  <section class="whyus_section layout_padding mt-5" data-aos="fade-up" data-aos-delay="150">
     <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h5>
-            E Book
-          </h5>
-          <ul>
-            <li>
-              random
-            </li>
-            <li>
-              Ebook Digital
-            </li>
-            <li>
-              Pemprograman Web
-            </li>
-            <li>
-              Novel Tere liye
-            </li>
-            <li>
-              Nina Feast
-            </li>
-            <li>
-              Naruto vs uchiha sasuke
-            </li>
-          </ul>
+      <h2 class="custom_heading">Kenapa Pilih Hawpiw Store?</h2>
+      <div class="row text-center mt-4">
+        <div class="col-md-3 mb-3">
+          <i class="fas fa-bolt fa-2x mb-2" style="color:#fc5d35;"></i>
+          <h5>Proses Instan</h5>
+          <p>Transaksi cepat, akun langsung aktif.</p>
         </div>
-        <div class="col-md-3">
-          <h5>
-            Layanan
-          </h5>
-          <ul>
-            <li>
-              YouTube
-            </li>
-            <li>
-              Netflix
-            </li>
-            <li>
-              Spotify
-            </li>
-            <li>
-              Canva
-            </li>
-            <li>
-              Scribd
-            </li>
-            <li>
-              WeTV
-            </li>
-            <li>
-              VIU
-            </li>
-          </ul>
+        <div class="col-md-3 mb-3">
+          <i class="fas fa-shield-alt fa-2x mb-2" style="color:#fc5d35;"></i>
+          <h5>100% Aman</h5>
+          <p>Garansi uang kembali & akun legal.</p>
         </div>
-        <div class="col-md-3">
-          <h5>
-            List
-          </h5>
-          <ul>
-            <li>
-              Home
-            </li>
-            <li>
-              produk
-            </li>
-            <li>
-              Layanan
-            </li>
-            <li>
-              Kontak Kami
-            </li>
-          </ul>
+        <div class="col-md-3 mb-3">
+          <i class="fas fa-headset fa-2x mb-2" style="color:#fc5d35;"></i>
+          <h5>Support 24 Jam</h5>
+          <p>Admin siap membantu kapan saja.</p>
         </div>
-        
-        <div class="col-md-3">
-          <div class="social_container">
-            <h5>
-              Follow Us
-            </h5>
-            <div class="social-box">
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="https://instagram.com/hawpiwstore">
-                <img src="images/instagram.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="subscribe_container">
-            <h5>
-              Subscribe Now
-            </h5>
-            <div class="form_container">
-              <form action="">
-                <input type="email">
-                <button type="submit">
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
+        <div class="col-md-3 mb-3">
+          <i class="fas fa-tags fa-2x mb-2" style="color:#fc5d35;"></i>
+          <h5>Harga Terbaik</h5>
+          <p>Diskon & cashback menarik tiap hari.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FAQ SECTION -->
+  <section class="faq_section layout_padding" data-aos="fade-up" data-aos-delay="300">
+    <div class="container">
+      <h2 class="custom_heading">FAQ - Pertanyaan Umum</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="card">
+          <div class="card-header" id="faq1"><h5 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Bagaimana cara membeli produk?</button></h5></div>
+          <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion"><div class="card-body">Klik tombol "Buy Now" pada produk, lalu ikuti instruksi pembayaran di Shopee atau hubungi admin via WhatsApp.</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="faq2"><h5 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Apakah akun yang dijual legal dan aman?</button></h5></div>
+          <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion"><div class="card-body">Semua akun dijamin legal, original, dan bergaransi. Jika ada masalah, uang kembali 100%.</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="faq3"><h5 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Bagaimana jika produk tidak sesuai?</button></h5></div>
+          <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion"><div class="card-body">Silakan hubungi admin, kami siap membantu refund/replace tanpa ribet.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Floating Button WhatsApp & Shopee -->
+  <div class="floating-btns">
+    <a href="https://api.whatsapp.com/send?phone=6289681861461" class="float-btn whatsapp" target="_blank" title="Chat WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://shopee.co.id/hz.kun" class="float-btn shopee" target="_blank" title="Shopee Store"><i class="fas fa-store"></i></a>
+  </div>
 
   <!-- footer section -->
-  <section class="container-fluid footer_section">
+  <section class="container-fluid footer_section" data-aos="fade-up" data-aos-delay="1400">
     <p>
       📍 Copyright © 2025 Hawpiw Store. All Rights Reserved.
     </p>
   </section>
   <!-- footer section -->
 
+  <div id="navbarSearchBox" class="navbar-search-box" style="display:none;">
+    <input type="text" id="navbarSearchInput" class="form-control" placeholder="Cari produk/layanan..." autocomplete="off">
+    <button id="navbarSearchGo" class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+    <button id="navbarSearchClose" class="btn btn-link" type="button" aria-label="Close"><i class="fas fa-times"></i></button>
+  </div>
+
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-
+  <!-- AOS Animate On Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
+    AOS.init();
+    // Spinner
+    window.addEventListener('load', function() {
+      document.getElementById('loading-spinner').style.display = 'none';
+    });
+    // Dark Mode
+    const darkBtn = document.getElementById('darkModeBtn');
+    darkBtn.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    });
+    if(localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+    }
+    // Lazy load images
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+      img.loading = 'lazy';
+    });
+    // Navbar Search
+    const showSearchInput = document.getElementById('showSearchInput');
+    const navbarSearchBox = document.getElementById('navbarSearchBox');
+    const navbarSearchInput = document.getElementById('navbarSearchInput');
+    const navbarSearchGo = document.getElementById('navbarSearchGo');
+    const navbarSearchClose = document.getElementById('navbarSearchClose');
+    showSearchInput.addEventListener('click', function() {
+      navbarSearchBox.style.display = 'flex';
+      navbarSearchInput.focus();
+    });
+    navbarSearchClose.addEventListener('click', function() {
+      navbarSearchBox.style.display = 'none';
+    });
+    navbarSearchGo.addEventListener('click', doNavbarSearch);
+    navbarSearchInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') doNavbarSearch();
+    });
+    function doNavbarSearch() {
+      const q = navbarSearchInput.value.trim().toLowerCase();
+      if (!q) return;
+      let found = false;
+      document.querySelectorAll('.custom_heading, .card-title, .fruit_detail-box h3').forEach(el => {
+        if (el.textContent.toLowerCase().includes(q)) {
+          el.scrollIntoView({behavior: 'smooth', block: 'center'});
+          el.style.background = '#fc5d3522';
+          setTimeout(()=>el.style.background='', 1200);
+          found = true;
+        }
       });
-
-      var image = 'images/maps-and-flags.png';
-      var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-        map: map,
-        icon: image
-      });
+      if (!found) alert('Tidak ditemukan: ' + q);
+      navbarSearchBox.style.display = 'none';
     }
   </script>
 </body>
