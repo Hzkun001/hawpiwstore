@@ -1,630 +1,481 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="icon" type="image/png" href="https://files.catbox.moe/68rgbc.png">
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Hawpiw Store</title>
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-  <!-- AOS Animate On Scroll -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <!-- SEO Meta -->
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Hawpiw Store - Toko Akun Premium, Ebook, Software" />
-  <meta property="og:description" content="Toko digital terpercaya untuk akun premium, ebook, dan software. Harga terjangkau, layanan cepat, support 24 jam." />
-  <meta property="og:image" content="images/logo.png" />
-  <meta property="og:type" content="website" />
-  <style>
-    .hero_area.sub_pages, .slider_section {
-      background: none !important;
-      min-height: unset !important;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hawpiwstore — Toko Akun Digital Premium Terpercaya</title>
+    <meta name="description" content="Beli akun premium langsung dari hawpiwstore. Pengiriman cepat, penjual terpercaya, dan promo terbaik untuk akun digital.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
-
 <body>
-  <!-- Loading Spinner -->
-  <div id="loading-spinner" style="position:fixed;z-index:99999;top:0;left:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:#fff;"><i class="fas fa-spinner fa-spin fa-3x" style="color:#fc5d35;"></i></div>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section sticky-top" data-aos="fade-down" data-aos-duration="1000">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3" style="position:relative;">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Logo Hawpiw Store" /><span> Official Id </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="darkmode-toggle ml-3">
-            <button id="darkModeBtn" class="btn btn-sm" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"><i class="fas fa-home mr-1"></i>Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="fruit.html"><i class="fas fa-box mr-1"></i> Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html"><i class="fas fa-cogs mr-1"></i> Services </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html"><i class="fas fa-envelope mr-1"></i>Contact us</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0" onsubmit="return false;">
-                <button id="showSearchInput" class="btn nav_search-btn" type="button" aria-label="Search"></button>
-              </form>
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <div class="container">
+            <span class="promo-text">🔥 Diskon 20% untuk Semua Akun Premium! Hanya sampai Minggu Ini!</span>
+            <button class="promo-close" aria-label="Close promo banner">×</button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">hawpiwstore</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#how-to-buy">Cara Order</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="https://wa.me/6289681861461">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Dapatkan Akses Premium. Seketika.</h1>
+                <p class="slogan">Netflix, Spotify, Canva, ChatGPT — langsung dikirim ke WhatsApp Anda. Dipercaya lebih dari 5.000 pelanggan.</p>
+                <a href="https://wa.me/6289681861461?text=Hi%20hawpiwstore%2C%20saya%20ingin%20memesan%20premium%20account" class="cta-button">
+                    <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                </a>
             </div>
-            <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
-              <a href="https://api.whatsapp.com/send?phone=6289681861461">
-                Chat CS!
-              </a>
+            <div class="hero-image">
+                <div class="premium-services">
+                    <div class="service-card">
+                        <img src="https://images.icon-icons.com/3053/PNG/512/netflix_macos_bigsur_icon_189917.png" alt="Netflix">
+                        <span>Netflix</span>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.icon-icons.com/836/PNG/512/Spotify_icon-icons.com_66783.png" alt="Spotify">
+                        <span>Spotify</span>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.icon-icons.com/3504/PNG/512/canva_icon_220714.png" alt="Canva">
+                        <span>Canva</span>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://w7.pngwing.com/pngs/994/418/png-transparent-viutv-korean-drama-television-show-hairdressing-vip-card-television-text-trademark.png" alt="Viu">
+                        <span>Viu</span>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://logos-world.net/wp-content/uploads/2024/01/CapCut-Symbol.png" alt="Capcut">
+                        <span>Capcut</span>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.icon-icons.com/1753/PNG/512/iconfinder-social-media-applications-30scribd-4102599_113800.png" alt="Scribd">
+                        <span>Scribd</span>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://freelogopng.com/images/all_img/1664536987alight-motion-logo-transparent.png" alt="Alight Motion">
+                        <span>A Motion</span>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.icon-icons.com/836/PNG/512/Youtube_icon-icons.com_66802.png" alt="Youtube">
+                        <span>Youtube</span>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.icon-icons.com/2407/PNG/512/grammarly_icon_146168.png" alt="Grammarly">
+                        <span>Grammarly</span>
+                    </div>
+                </div>
             </div>
-          </div>
-        </nav>
-      </div>
+        </div>
     </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section position-relative" data-aos="fade-up" data-aos-duration="1200">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="slider_item-box">
-              <div class="slider_item-container">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="slider_item-detail">
-                        <div>
-                          <h1>
-                            Selamat Datang <br />
-                            di Hawpiw Store
-                          </h1>
-                          <p>
-                            Tempat terbaik berbagai akun premium, eBook, dan software dengan harga terjangkau. Kami menyediakan produk digital yang siap pakai untuk kebutuhan hiburan, edukasi, dan produktivitas Anda.
-                          </p>
-                          <div class="d-flex">
-                            <a href="https://shopee.co.id/hz.kun" class="text-uppercase custom_orange-btn mr-3">
-                              Belanja Sekarang
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=6289681861461" class="text-uppercase custom_dark-btn">
-                              Kontak Kami
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Daftar Layanan Premium</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://images.icon-icons.com/3053/PNG/512/netflix_macos_bigsur_icon_189917.png" alt="Netflix">
+                        <span class="product-name">Netflix Premium</span>
                     </div>
-                    <div class="col-md-6">
-                      <div class="slider_img-box">
-                        <div>
-                          <img src="images/slide-img.png" alt="" class="" />
-                        </div>
-                      </div>
+                    <div class="product-info">
+                        <p class="description">Akses konten premium dengan kualitas HD.</p>
+                        <div class="price">Rp.35.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=Hi%20hawpiwstore%2C%20I%20want%20to%20order%20Netflix%20Premium" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="slider_item-box">
-              <div class="slider_item-container">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="slider_item-detail">
-                        <div>
-                          <h1>
-                            Welcome to <br />
-                            Our Hawpiw Store
-                          </h1>
-                          <p>
-                            Get premium accounts, eBooks, and software at affordable prices. We provide ready-to-use digital products for entertainment, education, and productivity needs.
-                          </p>
-                          <div class="d-flex">
-                            <a href="https://shopee.co.id/hz.kun" class="text-uppercase custom_orange-btn mr-3">
-                              Shop Now
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=6289681861461" class="text-uppercase custom_dark-btn">
-                              Contact Us
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://images.icon-icons.com/836/PNG/512/Spotify_icon-icons.com_66783.png" alt="Spotify">
+                        <span class="product-name">Spotify Premium</span>
                     </div>
-                    <div class="col-md-6">
-                      <div class="slider_img-box">
-                        <div>
-                          <img src="images/slide-img.png" alt="" class="" />
-                        </div>
-                      </div>
+                    <div class="product-info">
+                        <p class="description">Dengarkan musik favoritmu tanpa gangguan iklan.</p>
+                        <div class="price">Rp.20.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=I%20want%20to%20order%20Spotify%20Premium" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="slider_item-box">
-              <div class="slider_item-container">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="slider_item-detail">
-                        <div>
-                          <h1>
-                            ようこそ <br />
-                            Hawpiw Storeへ
-                          </h1>
-                          <p>
-                            プレミアムアカウント、電子書籍、ソフトウェアをお手頃価格でご提供します。
-エンタメ、教育、仕事効率化に最適なデジタル商品を取り揃えています。
-                          </p>
-                          <div class="d-flex">
-                            <a href="https://shopee.co.id/hz.kun" class="text-uppercase custom_orange-btn mr-3">
-                              ショップを見る
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=6289681861461" class="text-uppercase custom_dark-btn">
-                              お問い合わせ
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://images.icon-icons.com/3504/PNG/512/canva_icon_220714.png" alt="Canva">
+                        <span class="product-name">Canva Pro</span>
                     </div>
-                    <div class="col-md-6">
-                      <div class="slider_img-box">
-                        <div>
-                          <img src="images/slide-img.png" alt="" class="" />
-                        </div>
-                      </div>
+                    <div class="product-info">
+                        <p class="description">Dapatkan template desain premium yang siap digunakan.</p>
+                        <div class="price">Rp.4.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=I%20want%20to%20order%20Canva%20Pro" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://w7.pngwing.com/pngs/994/418/png-transparent-viutv-korean-drama-television-show-hairdressing-vip-card-television-text-trademark.png" alt="Viu">
+                        <span class="product-name">Viu Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="description">Nikmati drama dan film premium tanpa batas.</p>
+                        <div class="price">Rp.5.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=I%20want%20to%20order%20Viu" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://logos-world.net/wp-content/uploads/2024/01/CapCut-Symbol.png" alt="Capcut">
+                        <span class="product-name">Capcut Pro</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="description">Edit dan ekspor video dengan kualitas hingga 4K.</p>
+                        <div class="price">Rp.25.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=I%20want%20to%20order%20Capcut%20Pro" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://images.icon-icons.com/1753/PNG/512/iconfinder-social-media-applications-30scribd-4102599_113800.png" alt="Scribd">
+                        <span class="product-name">Scribd Pro</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="description">Baca buku, eBook, dan dengarkan audiobook tanpa batas.</p>
+                        <div class="price">Rp.10.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=I%20want%20to%20order%20Scribd%20Pro" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://freelogopng.com/images/all_img/1664536987alight-motion-logo-transparent.png" alt="Microsoft Office 365">
+                        <span class="product-name">Alight Motion Pro</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="description">Buat video dan animasi berkualitas tinggi dengan alat pro-level.</p>
+                        <div class="price">Rp.6.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=I%20want%20to%20order%20Alight%20Motion%20Pro" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://images.icon-icons.com/836/PNG/512/Youtube_icon-icons.com_66802.png" alt="Youtube">
+                        <span class="product-name">Youtube Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="description">Nikmati video YouTube tanpa gangguan iklan.</p>
+                        <div class="price">Rp.5.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=I%20want%20to%20order%20Youtube%20Premium" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://images.icon-icons.com/2407/PNG/512/grammarly_icon_146168.png" alt="Grammarly">
+                        <span class="product-name">Grammarly Pro</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="description">Perbaiki grammar, ejaan, dan tanda baca dengan mudah.</p>
+                        <div class="price">Rp.10.000/bulan</div>
+                        <a href="https://wa.me/6289681861461?text=I%20want%20to%20order%20Grammarly%20Pro" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="custom_carousel-control">
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
     </section>
 
-    <!-- end slider section -->
-  </div>
-
-  <!-- service section -->
-
-  <section class="service_section layout_padding " data-aos="fade-up" data-aos-delay="200">
-    <div class="container">
-      <h2 class="custom_heading">Layanan Kami</h2>
-      <p class="custom_heading-text">
-        Kami menyediakan berbagai layanan digital terbaik untuk memenuhi kebutuhan Anda
-      </p>
-      <div class=" layout_padding2">
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="images/card-item-1.png" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Akun Premium</h5>
-              <p class="card-text">
-                Dapatkan akses eksklusif ke layanan premium seperti Spotify, Netflix, Scribd, dan YouTube Premium dengan harga lebih terjangkau.
-              </p>
+    <section id="how-to-buy" class="how-to-buy">
+        <div class="container">
+            <h2>Cara Order Pesanan</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Pilih Produk</h3>
+                    <p>Pilih akun premium yang Anda inginkan</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Bayar</h3>
+                    <p>Lakukan pembayaran melalui WhatsApp</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Kirim email</h3>
+                    <p>Silahkan lampirkan email untuk undangan akun premium</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Konfirmasi bergabung</h3>
+                    <p>Akun premium dikirim langsung ke Email yang Anda berikan</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Terima via WhatsApp</h3>
+                    <p>Berikan hasil bukti screenshot untuk mendapatkan akun garansi</p>
+                </div>
             </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="images/card-item-2.png" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">E-Book Digital</h5>
-              <p class="card-text">
-                Kami menyediakan berbagai e-book berkualitas tinggi tentang bisnis, pengembangan diri, dan teknologi yang bisa Anda baca kapan saja.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="images/card-item-3.png" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Desain & Tools Digital</h5>
-              <p class="card-text">
-                Nikmati akses ke Canva Pro dan software desain lainnya untuk menunjang kreativitas dan produktivitas Anda.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <a href="service.html" class="custom_dark-btn">
-          Read More
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end service section -->
-
-  <!-- fruits section -->
-
-  <section class="fruit_section" data-aos="fade-up" data-aos-delay="400">
-    <div class="container">
-      <h2 class="custom_heading">Produk Digital Terbaik</h2>
-      <p class="custom_heading-text">
-        Temukan Produk Digital yang Sesuai dengan Kebutuhan Anda
-      </p>
-      <div class="row layout_padding2">
-        <div class="col-md-8">
-          <div class="fruit_detail-box">
-            <h3>
-              Canva Pro
-            </h3>
-            <p class="mt-4 mb-5">
-              Buat desain profesional dengan fitur premium. Ideal untuk bisnis, konten kreator, dan mahasiswa.
-            </p>
-            <div>
-              <a href="https://shopee.co.id/Canva-pro-akun-Premium-1-bulan-i.266710323.27380017668" class="custom_dark-btn">
-                Buy Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <div class="fruit_img-box d-flex justify-content-center align-items-center">
-            <img src="images/orange.png" alt="" class="" width="250px" />
-          </div>
-        </div>
-      </div>
-      <div class="row layout_padding2">
-        <div class="col-md-8">
-          <div class="fruit_detail-box">
-            <h3>
-              Buku Panduan Bisnis Digital
-            </h3>
-            <p class="mt-4 mb-5">
-              E-book eksklusif yang membahas strategi sukses dalam bisnis digital. Panduan lengkap untuk pemula hingga expert!
-            </p>
-            <div>
-              <a href="https://shopee.co.id/Jual-Buku-Konsep-Dasar-Pemrograman-Belajar-Coding-dari-Nol-i.266710323.29629714921" class="custom_dark-btn">
-                Buy Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <div class="fruit_img-box d-flex justify-content-center ">
-            <img src="images/grapes.jpg" alt="" class="" width="200px" />
-          </div>
-        </div>
-      </div>
-      <div class="row layout_padding2-top layout_padding-bottom">
-        <div class="col-md-8">
-          <div class="fruit_detail-box">
-            <h3>
-              Spotify Premium
-            </h3>
-            <p class="mt-4 mb-5">
-              Nikmati musik tanpa iklan, kualitas tinggi, dan mode offline. Cocok untuk menemani aktivitas harian Anda!
-            </p>
-            <div>
-              <a href="https://shopee.co.id/Spotify-premium-akun-1-bulan-i.266710323.29280025332" class="custom_dark-btn">
-                Buy Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <div class="fruit_img-box d-flex justify-content-center align-items-center">
-            <img src="images/gauva.png" alt="" class="" width="250px" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end fruits section -->
-
-  <!-- client section -->
-
-  <section class="testimonial_section layout_padding" data-aos="fade-up" data-aos-delay="800">
-    <div class="container">
-      <h2 class="custom_heading">Apa Kata Mereka?</h2>
-      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-lg-5 mb-4">
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimoni Pelanggan</h2>
+            <div class="testimonials-grid">
                 <div class="testimonial-card">
-                  <div class="testimonial-avatar">
-                    <img src="images/client.png" alt="Reza Arap">
-                  </div>
-                  <div class="testimonial-content">
-                    <p class="testimonial-quote">“Pelayanan cepat, harga murah, dan support ramah. Sangat recommended!”</p>
-                    <div class="testimonial-rating">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Customer">
                     </div>
-                    <div class="testimonial-user">
-                      <strong>Reza Arap</strong><br>
-                      <span>Content Creator</span>
+                    <div class="testimonial-content">
+                        <p class="rating">★★★★★</p>
+                        <p class="testimonial-text">"Pelayanan cepat dan profesional! Akun Netflix saya dikirim dalam hitungan menit."</p>
+                        <p class="testimonial-author">Anwar saiful</p>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-5 mb-4">
                 <div class="testimonial-card">
-                  <div class="testimonial-avatar">
-                    <img src="images/client.png" alt="Eminem">
-                  </div>
-                  <div class="testimonial-content">
-                    <p class="testimonial-quote">“Saya selalu beli spotify premium di hawpiw store. Musik adalah hal indah di dunia.”</p>
-                    <div class="testimonial-rating">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Customer">
                     </div>
-                    <div class="testimonial-user">
-                      <strong>Eminem</strong><br>
-                      <span>Musisi</span>
+                    <div class="testimonial-content">
+                        <p class="rating">★★★★★</p>
+                        <p class="testimonial-text">"Sangat terpercaya! Sudah membeli beberapa kali dan selalu puas."</p>
+                        <p class="testimonial-author">Joe Cobra</p>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-lg-5 mb-4">
                 <div class="testimonial-card">
-                  <div class="testimonial-avatar">
-                    <img src="images/client.png" alt="Gus Azmi">
-                  </div>
-                  <div class="testimonial-content">
-                    <p class="testimonial-quote">“Pacaran tidak perlu. Beli premium tetap di hawpiw selalu.”</p>
-                    <div class="testimonial-rating">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Customer">
                     </div>
-                    <div class="testimonial-user">
-                      <strong>Gus Azmi</strong><br>
-                      <span>Mahasiswa</span>
+                    <div class="testimonial-content">
+                        <p class="rating">★★★★★</p>
+                        <p class="testimonial-text">"Mantap sekali, jangan ragu beli di toko ini. The best dan berkualitas"</p>
+                        <p class="testimonial-author">Ahmad Dani</p>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-5 mb-4">
-                <div class="testimonial-card">
-                  <div class="testimonial-avatar">
-                    <img src="images/client.png" alt="Nina Feast">
-                  </div>
-                  <div class="testimonial-content">
-                    <p class="testimonial-quote">“Akun langsung aktif, admin fast response, dan banyak promo menarik!”</p>
-                    <div class="testimonial-rating">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <div class="testimonial-user">
-                      <strong>Nina Feast</strong><br>
-                      <span>Freelancer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- end testimonial section -->
-
-  <!-- contact section -->
-  <section class="contact_section layout_padding" data-aos="fade-up" data-aos-delay="1000">
-    <div class="container">
-      <h2 class="font-weight-bold">
-        Contact Us
-      </h2>
-      <div class="row">
-        <div class="col-md-8 mr-auto">
-          <form action="">
-            <div class="contact_form-container">
-              <div>
-                <div>
-                  <input type="text" placeholder="Name">
+    </section>
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Bagaimana cara membeli produk di hawpiwstore?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Pilih produk yang Anda inginkan, klik tombol "Order via WhatsApp", dan ikuti instruksi yang diberikan. Akun premium akan dikirim ke WhatsApp Anda dalam waktu 5-10 menit.</p>
+                    </div>
                 </div>
-                <div>
-                  <input type="text" placeholder="Phone Number">
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <i class="fas fa-wallet"></i>
+                        <span>Apa saja metode pembayaran yang tersedia?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Kami menerima pembayaran melalui:</p>
+                        <ul>
+                            <li>Transfer Bank Jago, Seabank</li>
+                            <li>QRIS (QR Code)</li>
+                            <li>Virtual Account</li>
+                            <li>Payment Gateway (DANA, OVO, Shopeepay)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                  <input type="email" placeholder="Email">
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <i class="fas fa-clock"></i>
+                        <span>Berapa lama waktu pengiriman akun premium?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Akun premium akan dikirim dalam hitungan menit setelah pembayaran berhasil. Rata-rata pengiriman hanya membutuhkan waktu 5-10 menit.</p>
+                    </div>
                 </div>
-
-                <div class="mt-5">
-                  <input type="text" placeholder="Message">
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Apakah produk yang dijual dijamin berfungsi?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Ya, semua produk yang kami jual dijamin berfungsi. Jika terjadi masalah, kami menyediakan garansi pengembalian dana selama 24 jam setelah pembelian.</p>
+                    </div>
                 </div>
-                <div class="mt-5">
-                  <button type="submit">
-                    send (Maintenance)
-                  </button>
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <i class="fas fa-headset"></i>
+                        <span>Bagaimana cara menghubungi customer service?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Anda bisa menghubungi kami melalui:</p>
+                        <ul>
+                            <li>WhatsApp: +6289681861461</li>
+                            <li>Email: support@hawpiw.web.id</li>
+                            <li>Live Chat (24/7)</li>
+                        </ul>
+                        <p>Kami siap membantu Anda kapan saja!</p>
+                    </div>
                 </div>
-              </div>
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Apakah ada kebijakan pengembalian dana?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Ya, kami menyediakan kebijakan pengembalian dana:</p>
+                        <ul>
+                            <li>Pengembalian dana 100% jika akun tidak berfungsi</li>
+                            <li>Waktu pengembalian: maksimal 27 hari setelah pembelian</li>
+                            <li>Proses pengembalian: melalui pergantian akun dan pembayaran yang sama</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <i class="fas fa-lock"></i>
+                        <span>Bagaimana keamanan data saya dijamin?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Kami mengutamakan keamanan data Anda:</p>
+                        <ul>
+                            <li>Semua transaksi dilakukan melalui sistem pembayaran terpercaya</li>
+                            <li>Data pribadi Anda dienkripsi dan disimpan dengan aman</li>
+                            <li>Kami tidak menyimpan informasi kartu kredit Anda</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Apakah akun premium yang saya beli resmi?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Ya, semua akun premium yang kami jual adalah akun resmi dengan akses penuh. Anda akan menerima:</p>
+                        <ul>
+                            <li>Email login resmi</li>
+                            <li>Password yang aman</li>
+                            <li>Akses penuh ke semua fitur premium</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </form>
         </div>
-      </div>
+    </section>
+
+    <!-- Order Notifications -->
+    <div class="order-notifications">
+        <div class="notification-container">
+            <div class="notification-header">
+                <i class="fas fa-bell"></i>
+                <span>Belanjaan Terbaru</span>
+            </div>
+            <div class="notification-list">
+                <!-- Notifications will be added dynamically by JavaScript -->
+            </div>
+        </div>
     </div>
-  </section>
-  <!-- end contact section -->
 
-  <iframe 
-  width="100%" 
-  height="400" 
-  frameborder="0" 
-  style="border:0" 
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6388.562164369867!2d114.7489894309652!3d-3.4716473000833736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de6812bf5fd4517%3A0x54a8b152b3e249d4!2sUniversitas%20Islam%20Negeri%20Antasari%20Banjarmasin%20-%20Kampus%20II!5e0!3m2!1sid!2sid!4v1743077382638!5m2!1sid!2sid" 
-  allowfullscreen>
-</iframe>
-  
-  <!-- WHY US SECTION -->
-  <section class="whyus_section layout_padding mt-5" data-aos="fade-up" data-aos-delay="150">
-    <div class="container">
-      <h2 class="custom_heading">Kenapa Pilih Hawpiw Store?</h2>
-      <div class="row text-center mt-4">
-        <div class="col-md-3 mb-3">
-          <i class="fas fa-bolt fa-2x mb-2" style="color:#fc5d35;"></i>
-          <h5>Proses Instan</h5>
-          <p>Transaksi cepat, akun langsung aktif.</p>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>hawpiwstore</h3>
+                    <p>Toko akun digital premium terpercaya di Indonesia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Hubungi Kami</h3>
+                    <ul>
+                        <li><a href="https://wa.me/6289681861461">+62 896-8186-1461</a></li>
+                        <li><a href="mailto:support@hawpiwstore.com">support@hawpiwstore.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/hawpiwstore" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://telegram.com" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="https://tiktok.com" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://shopee.co.id/hz.kun" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 hawpiwstore. Hak Cipta Dilindungi.</p>
+            </div>
         </div>
-        <div class="col-md-3 mb-3">
-          <i class="fas fa-shield-alt fa-2x mb-2" style="color:#fc5d35;"></i>
-          <h5>100% Aman</h5>
-          <p>Garansi uang kembali & akun legal.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Floating WhatsApp Bubble -->
+    <div class="floating-bubble">
+        <div class="bubble-content">
+            <i class="fab fa-whatsapp"></i>
+            <span><a href="https://wa.me/6289681861461" style="text-decoration: none;color: white">Butuh Bantuan? Klik di sini</a></span>
         </div>
-        <div class="col-md-3 mb-3">
-          <i class="fas fa-headset fa-2x mb-2" style="color:#fc5d35;"></i>
-          <h5>Support 24 Jam</h5>
-          <p>Admin siap membantu kapan saja.</p>
-        </div>
-        <div class="col-md-3 mb-3">
-          <i class="fas fa-tags fa-2x mb-2" style="color:#fc5d35;"></i>
-          <h5>Harga Terbaik</h5>
-          <p>Diskon & cashback menarik tiap hari.</p>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- FAQ SECTION -->
-  <section class="faq_section layout_padding" data-aos="fade-up" data-aos-delay="300">
-    <div class="container">
-      <h2 class="custom_heading">FAQ - Pertanyaan Umum</h2>
-      <div class="accordion" id="faqAccordion">
-        <div class="card">
-          <div class="card-header" id="faq1"><h5 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Bagaimana cara membeli produk?</button></h5></div>
-          <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion"><div class="card-body">Klik tombol "Buy Now" pada produk, lalu ikuti instruksi pembayaran di Shopee atau hubungi admin via WhatsApp.</div></div>
+    <!-- Kenapa Pilih Kami? (Accordion Style) -->
+    <div class="why-choose-us-accordion">
+        <div class="accordion-header" tabindex="0" aria-expanded="false">
+            <i class="fas fa-question-circle"></i>
+            <span>` Mengapa Pilih hawpiwstore?</span>
         </div>
-        <div class="card">
-          <div class="card-header" id="faq2"><h5 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Apakah akun yang dijual legal dan aman?</button></h5></div>
-          <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion"><div class="card-body">Semua akun dijamin legal, original, dan bergaransi. Jika ada masalah, uang kembali 100%.</div></div>
+        <div class="accordion-content">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="feature-info">
+                    <h3>Support Cepat & Ramah</h3>
+                    <p>Tim kami siap membantu kamu kapan saja di WhatsApp.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-info">
+                    <h3>100% Aman & Terjamin</h3>
+                    <p>Garansi uang kembali jika akun tidak berfungsi.</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="faq3"><h5 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Bagaimana jika produk tidak sesuai?</button></h5></div>
-          <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion"><div class="card-body">Silakan hubungi admin, kami siap membantu refund/replace tanpa ribet.</div></div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- Floating Button WhatsApp & Shopee -->
-  <div class="floating-btns">
-    <a href="https://api.whatsapp.com/send?phone=6289681861461" class="float-btn whatsapp" target="_blank" title="Chat WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://shopee.co.id/hz.kun" class="float-btn shopee" target="_blank" title="Shopee Store"><i class="fas fa-store"></i></a>
-  </div>
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section" data-aos="fade-up" data-aos-delay="1400">
-    <p>
-      📍 Copyright © 2025 Hawpiw Store. All Rights Reserved.
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <div id="navbarSearchBox" class="navbar-search-box" style="display:none;">
-    <input type="text" id="navbarSearchInput" class="form-control" placeholder="Cari produk/layanan..." autocomplete="off">
-    <button id="navbarSearchGo" class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
-    <button id="navbarSearchClose" class="btn btn-link" type="button" aria-label="Close"><i class="fas fa-times"></i></button>
-  </div>
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- AOS Animate On Scroll -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    // Spinner
-    window.addEventListener('load', function() {
-      document.getElementById('loading-spinner').style.display = 'none';
-    });
-    // Dark Mode
-    const darkBtn = document.getElementById('darkModeBtn');
-    darkBtn.addEventListener('click', function() {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    });
-    if(localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-    }
-    // Lazy load images
-    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-      img.loading = 'lazy';
-    });
-    // Navbar Search
-    const showSearchInput = document.getElementById('showSearchInput');
-    const navbarSearchBox = document.getElementById('navbarSearchBox');
-    const navbarSearchInput = document.getElementById('navbarSearchInput');
-    const navbarSearchGo = document.getElementById('navbarSearchGo');
-    const navbarSearchClose = document.getElementById('navbarSearchClose');
-    showSearchInput.addEventListener('click', function() {
-      navbarSearchBox.style.display = 'flex';
-      navbarSearchInput.focus();
-    });
-    navbarSearchClose.addEventListener('click', function() {
-      navbarSearchBox.style.display = 'none';
-    });
-    navbarSearchGo.addEventListener('click', doNavbarSearch);
-    navbarSearchInput.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') doNavbarSearch();
-    });
-    function doNavbarSearch() {
-      const q = navbarSearchInput.value.trim().toLowerCase();
-      if (!q) return;
-      let found = false;
-      document.querySelectorAll('.custom_heading, .card-title, .fruit_detail-box h3').forEach(el => {
-        if (el.textContent.toLowerCase().includes(q)) {
-          el.scrollIntoView({behavior: 'smooth', block: 'center'});
-          el.style.background = '#fc5d3522';
-          setTimeout(()=>el.style.background='', 1200);
-          found = true;
-        }
-      });
-      if (!found) alert('Tidak ditemukan: ' + q);
-      navbarSearchBox.style.display = 'none';
-    }
-  </script>
+            
 </body>
-
 </html>
