@@ -478,7 +478,7 @@ p {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: var(--text-color);
+    color: var (--text-color);
 }
 
 .cta-button {
@@ -1121,6 +1121,12 @@ footer {
     padding: 0 1rem 1rem 1rem;
     max-height: 400px;
     transition: max-height 0.3s;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-choose-us-accordion {
+    display: none !important;
   }
 }
 
