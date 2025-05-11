@@ -448,7 +448,7 @@ p {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var (--text-color);
     font-weight: 500;
     transition: var(--transition);
 }
@@ -1040,6 +1040,88 @@ footer {
     .why-choose-us-accordion.active {
         max-height: 500px;
     }
+}
+
+@media (max-width: 600px) {
+  .why-choose-us-accordion {
+    width: 52px;
+    min-width: 0;
+    max-width: 52px;
+    height: 52px;
+    max-height: 52px;
+    border-radius: 50%;
+    right: 12px;
+    left: auto;
+    bottom: 70px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(79,70,229,0.10);
+    background: linear-gradient(135deg, #f8f9fa 60%, #e0e7ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .why-choose-us-accordion .accordion-header {
+    padding: 0;
+    min-height: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+    background: none;
+    font-size: 1.5rem;
+  }
+  .why-choose-us-accordion .accordion-header i {
+    font-size: 2rem;
+    color: var(--accent-color);
+  }
+  .why-choose-us-accordion .accordion-header span {
+    display: none;
+  }
+  .why-choose-us-accordion .accordion-content {
+    display: none;
+  }
+  .why-choose-us-accordion.active {
+    width: 95vw;
+    max-width: 99vw;
+    min-width: 0;
+    height: auto;
+    max-height: 500px;
+    border-radius: 16px;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    background: rgba(255,255,255,0.97);
+    transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+    overflow: visible;
+    display: block;
+  }
+  .why-choose-us-accordion.active .accordion-header {
+    width: 100%;
+    min-height: 40px;
+    padding: 0.3rem 0.7rem;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    background: none;
+    font-size: 1rem;
+    justify-content: flex-start;
+  }
+  .why-choose-us-accordion.active .accordion-header span {
+    display: inline;
+    margin-left: 0.7rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .why-choose-us-accordion.active .accordion-content {
+    display: block;
+    padding: 0 1rem 1rem 1rem;
+    max-height: 400px;
+    transition: max-height 0.3s;
+  }
 }
 
 .accordion-header {

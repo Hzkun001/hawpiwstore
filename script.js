@@ -220,15 +220,24 @@ function updatePromoBannerPadding() {
     }
 }
 
-// 2. Floating WhatsApp Bubble: Clickable on entire bubble
+// 2. Floating WhatsApp Bubble: Clickable on entire bubble (mobile & desktop)
 const floatingBubble = document.querySelector('.floating-bubble');
 if (floatingBubble) {
     floatingBubble.addEventListener('click', function(e) {
-        // Only trigger if not clicking a link inside
+        // Always open WhatsApp unless clicking a link (for accessibility)
         if (!e.target.closest('a')) {
             window.open('https://wa.me/6289681861461', '_blank');
         }
     });
+    // On mobile, also make the icon itself a direct link for accessibility
+    const bubbleIcon = floatingBubble.querySelector('i.fab.fa-whatsapp');
+    if (bubbleIcon) {
+        bubbleIcon.style.cursor = 'pointer';
+        bubbleIcon.addEventListener('click', function(e) {
+            window.open('https://wa.me/6289681861461', '_blank');
+            e.stopPropagation();
+        });
+    }
 }
 
 // 3. Footer: Current year auto update
