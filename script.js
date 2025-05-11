@@ -7,10 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const promoBanner = document.querySelector('.promo-banner');
     const promoClose = document.querySelector('.promo-close');
     
+    if (promoBanner) {
+        document.body.classList.add('has-promo-banner');
+    }
+    
     if (promoClose) {
         promoClose.addEventListener('click', () => {
             promoBanner.style.transform = 'translateY(-100%)';
-            promoBanner.style.transition = 'transform 0.3s ease';
+            promoBanner.style.opacity = '0';
+            promoBanner.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
             
             // Store preference in localStorage
             localStorage.setItem('promoBannerClosed', 'true');
@@ -18,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Remove banner after animation
             setTimeout(() => {
                 promoBanner.remove();
+                document.body.classList.remove('has-promo-banner');
             }, 300);
         });
     }
@@ -25,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check if banner should be shown
     if (localStorage.getItem('promoBannerClosed') === 'true') {
         promoBanner.style.display = 'none';
+        document.body.classList.remove('has-promo-banner');
     }
 
     // Premium Scroll Animations
@@ -200,3 +207,72 @@ window.addEventListener('load', () => {
         element.style.transition = 'all 0.6s ease-out';
     });
 });
+
+// --- OPTIMIZATION & IMPROVEMENT SECTION ---
+
+// 1. Promo Banner: Only add padding if banner is visible
+function updatePromoBannerPadding() {
+    const promoBanner = document.querySelector('.promo-banner');
+    if (promoBanner && promoBanner.style.display !== 'none') {
+        document.body.classList.add('has-promo-banner');
+    } else {
+        document.body.classList.remove('has-promo-banner');
+    }
+}
+
+// 2. Floating WhatsApp Bubble: Clickable on entire bubble
+const floatingBubble = document.querySelector('.floating-bubble');
+if (floatingBubble) {
+    floatingBubble.addEventListener('click', function(e) {
+        // Only trigger if not clicking a link inside
+        if (!e.target.closest('a')) {
+            window.open('https://wa.me/6289681861461', '_blank');
+        }
+    });
+}
+
+// 3. Footer: Current year auto update
+const footerYear = document.querySelector('.footer-bottom p');
+if (footerYear) {
+    footerYear.innerHTML = `&copy; ${new Date().getFullYear()} hawpiwstore. Hak Cipta Dilindungi.`;
+}
+
+// 4. Accordion accessibility improvement (FAQ & Why Choose Us)
+document.querySelectorAll('.faq-trigger, .accordion-header').forEach(btn => {
+    btn.setAttribute('tabindex', '0');
+    btn.setAttribute('role', 'button');
+    btn.setAttribute('aria-pressed', 'false');
+    btn.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            btn.click();
+        }
+    });
+    btn.addEventListener('click', function() {
+        const expanded = btn.getAttribute('aria-pressed') === 'true';
+        btn.setAttribute('aria-pressed', String(!expanded));
+    });
+});
+
+// 5. Optimize scroll/animation event listeners (debounce)
+function debounce(fn, wait) {
+    let t;
+    return function(...args) {
+        clearTimeout(t);
+        t = setTimeout(() => fn.apply(this, args), wait);
+    };
+}
+window.addEventListener('scroll', debounce(() => {
+    const elements = document.querySelectorAll('.animate');
+    elements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }
+    });
+}, 50));
+
+// 6. Ensure promo banner padding is always correct on load/close
+window.addEventListener('DOMContentLoaded', updatePromoBannerPadding);
+window.addEventListener('resize', updatePromoBannerPadding);
